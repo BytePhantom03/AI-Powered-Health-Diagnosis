@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    {% extends "base.html" %} {% block content %}
+    <div class="container py-5">
+      <div class="text-center mb-4">
+        <h2>Meet the Developer</h2>
+        <p class="lead">Junaid Khan – AI & ML Engineer</p>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-md-10">
+          <div class="card shadow-sm p-4">
+            <p>
+              Hello, I'm <strong>Ravi Zapadiya</strong>, an AI and Machine
+              Learning Engineer with over 5 years of experience. I'm passionate
+              about creating impactful tech solutions that improve lives,
+              especially in the healthcare sector.
+            </p>
+
+            <h5>My Expertise</h5>
+            <p>
+              With a strong background in computer science, I’ve contributed to
+              innovative AI and ML projects across international teams. My focus
+              is on building intelligent, accessible, and scalable systems.
+            </p>
+
+            <h5>Vision Behind This Platform</h5>
+            <p>
+              This health diagnosis system merges my interests in AI and
+              healthcare. The goal is to offer fast, reliable, and educational
+              health insights to users across the globe.
+            </p>
+
+            <h5>Let’s Build a Healthier Future</h5>
+            <p>
+              Explore the platform, learn about your health, and take positive
+              steps—empowered by AI.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    {% endblock %}
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

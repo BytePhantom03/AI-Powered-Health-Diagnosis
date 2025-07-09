@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    {% extends "base.html" %} {% block content %}
+    <div class="container py-5">
+      <div class="text-center mb-4">
+        <h2>About the Project</h2>
+        <p class="lead">Empowering healthcare through AI-driven diagnosis</p>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-md-10">
+          <div class="card shadow-sm p-4">
+            <h4 class="mb-3">Project Overview</h4>
+            <p>
+              This AI-powered health diagnosis system leverages machine learning
+              to analyze user-reported symptoms and provide potential disease
+              predictions. By offering descriptions, precautions, medications,
+              diet recommendations, and workout suggestions, the system aims to
+              enhance healthcare accessibility and promote early intervention.
+            </p>
+
+            <h4 class="mt-4 mb-3">How It Works</h4>
+            <ul>
+              <li>
+                <strong>Input Symptoms:</strong> Users enter or speak their
+                symptoms into the system.
+              </li>
+              <li>
+                <strong>AI Diagnosis:</strong> Our trained model analyzes the
+                symptoms and predicts a possible disease.
+              </li>
+              <li>
+                <strong>Detailed Report:</strong> The system presents a
+                description, suggested precautions, medication advice, and
+                healthy lifestyle tips.
+              </li>
+            </ul>
+
+            <h4 class="mt-4 mb-3">Technologies Used</h4>
+            <p>
+              The application is built using Python (Flask), HTML/CSS,
+              Bootstrap, and integrates AI/ML models trained on healthcare
+              datasets. It is designed to be simple, fast, and informative for
+              everyday users.
+            </p>
+
+            <h4 class="mt-4 mb-3">Disclaimer</h4>
+            <p>
+              This tool is for informational purposes only and is not a
+              substitute for professional medical advice, diagnosis, or
+              treatment. Always seek the advice of your physician or another
+              qualified healthcare provider with any questions you may have.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    {% endblock %}
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
